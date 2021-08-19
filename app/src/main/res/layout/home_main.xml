@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00FFFFFF"
+    android:backgroundTint="#00FFFFFF"
+    android:backgroundTintMode="add"
+    tools:context=".MapActivity">
+
+    <!-- 네이버 지도 -->
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/view_toolbar" />
+
+    <Button
+        android:id="@+id/write_button"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_alignEnd="@id/toolbar"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/ic_baseline_create_24" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.naver.maps.map.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/SearchText"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/SearchText"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+        android:ems="10"
+        android:hint="  지역을 입력하세요."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="33dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@id/SearchText"
+        android:background="@drawable/ic_baseline_search_24"
+        app:layout_constraintBottom_toTopOf="@id/SearchText"
+        app:layout_constraintEnd_toEndOf="@id/SearchText" />
+
+    <TextView
+        android:id="@+id/typeText"
+        android:layout_width="151dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/map"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/search_button"
+        android:background="@color/main_color"
+        android:backgroundTint="#8FB9E8FB"
+        android:drawableRight="@drawable/ic_baseline_home_24"
+        android:gravity="center"
+        android:shadowColor="#00FFFFFF"
+        android:text="귀가메이트"
+        android:textSize="18sp" />
+    <include
+        android:id="@+id/container"
+        layout="@layout/underbar"/>
+</RelativeLayout>

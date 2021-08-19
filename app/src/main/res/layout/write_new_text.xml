@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:scrollHorizontally="false"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:text="출발지" />
+
+        <EditText
+            android:id="@+id/startPosition"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:ems="10"
+            android:hint="출발지를 입력해주세요. "
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="도착지" />
+
+        <EditText
+            android:id="@+id/endPosition"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:ems="10"
+            android:hint="도착지를 입력해주세요."
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="65dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="추가 사항" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="313dp"
+        android:layout_height="129dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/noBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="취소"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        <Button
+            android:id="@+id/yesBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="등록"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+    </LinearLayout>
+
+</LinearLayout>

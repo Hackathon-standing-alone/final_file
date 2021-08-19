@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "220200705589",
+    "project_id": "standing-alone-e19eb",
+    "storage_bucket": "standing-alone-e19eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220200705589:android:bdcdfc4ea8ab70ba7b1b7c",
+        "android_client_info": {
+          "package_name": "com.example.standing_alone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220200705589-6me2ame0q9upnc1de8qmk6hida84cki8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwsQ3zFLfXIhKlqHHwIu42gbynOvVng6g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220200705589-6me2ame0q9upnc1de8qmk6hida84cki8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
